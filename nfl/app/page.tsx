@@ -26,18 +26,10 @@ export default function Home() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link>
-                  <Link href={'#'}>Home</Link>
-                </Nav.Link>
-                <Nav.Link>
-                  <Link href={'/about'}>About</Link>
-                </Nav.Link>
-                <Nav.Link>
-                  <Link href={'/teams'}>Teams</Link>
-                </Nav.Link>
-                <Nav.Link>
-                  <Link href={'/quiz'}>Quiz</Link>
-                </Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/about">About</Nav.Link>
+                <Nav.Link href="/teams">Teams</Nav.Link>
+                <Nav.Link href="/quiz">Quiz</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
