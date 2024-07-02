@@ -20,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/images/favicon-32x32.png" />
+      </head>
       <body className={roboto.className}>
         <Mynavbar />
         {children}
