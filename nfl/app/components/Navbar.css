@@ -1,0 +1,80 @@
+.navbar-color {
+  background: #003069 !important;
+}
+
+.brand-links {
+  color: white !important;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.navbar-toggle {
+  /* background: white !important; */
+  border: 2px solid white !important;
+}
+
+/* Changes the icon (bars) color to white using a data URI to embed the SVG directly in CSS. */
+.navbar-toggle .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.offcanvas-style {
+  background: #003069 !important;
+}
+
+.offcanvas-closebutton {
+  color: white !important;
+}
+
+/* Custom styles for the offcanvas close button */
+.offcanvas-closebutton .btn-close {
+  filter: invert(1); /* Inverts the color of the close button */
+}
+
+.offcanvas-closebutton .btn-close:focus {
+  box-shadow: none; /* Remove focus outline */
+}
+
+/* Additional specificity for high-priority styles */
+.offcanvas-closebutton .btn-close {
+  background-color: transparent; /* Ensure no background color */
+  border: none; /* Remove any border */
+}
+
+.offcanvas-title {
+  padding-left: 22px; /* Adjust this value as needed */
+  font-weight: bold;
+}
+
+.navbar-links {
+  color: white !important;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.navbar-links::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: white;
+  bottom: 4px;
+  left: 50%;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-links:hover::after {
+  width: 70%;
+}
