@@ -78,3 +78,9 @@
 .navbar-links:hover::after {
   width: 70%;
 }
+
+@media screen and (max-width: 600px) {
+  .navbar-links::after {
+    content: none;
+  }
+}

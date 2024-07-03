@@ -12,15 +12,21 @@ import React from 'react'
 function Mynavbar() {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary mb-3 navbar-color">
+      <Navbar
+        expand="lg"
+        className="bg-body-tertiary mb-3 navbar-color"
+        style={{ marginBottom: '0 !important' }}
+      >
         <Container fluid>
-          <Image
-            src="/images/NFL_logo.png"
-            alt="nfl logo"
-            width={35}
-            height={48}
-            className="navbar-logo"
-          />
+          <Link href="/">
+            <Image
+              src="/images/NFL_logo.png"
+              alt="nfl logo"
+              width={35}
+              height={48}
+              className="navbar-logo"
+            />
+          </Link>
           <Link href="/" passHref legacyBehavior>
             <Navbar.Brand className="brand-links">NFL Guide</Navbar.Brand>
           </Link>
