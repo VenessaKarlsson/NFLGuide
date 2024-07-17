@@ -57,6 +57,7 @@
 }
 
 /* Banner Section Mobile first */
+
 .banner__section {
   margin: 10vh 0;
   height: 50vh;
@@ -87,6 +88,7 @@
   background-position: center;
   width: 100%;
   height: 50vh;
+  min-height: 50vh;
   position: relative;
 }
 
@@ -94,13 +96,13 @@
   position: absolute;
   transform: translate(-50%, -50%); /* Center the element precisely */
   bottom: 0;
-  padding: 1.4vh 6vw;
+  padding: 1.2vh 5.9vw;
   display: flex;
   align-items: center;
   margin-top: 2.5vh;
   border: none;
   border-radius: 5px;
-  background: #003069;
+  background: #1b48e0;
   color: white;
   text-decoration: none;
 }
@@ -128,6 +130,150 @@
 a {
   text-decoration: none;
 }
+/* End of Banner Section */
+
+/* Exploring Section Mobile first */
+
+.exploring__section {
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10vh;
+}
+
+.exploring-title {
+  text-align: center;
+  font-weight: bold;
+  margin: 0 3vw;
+}
+
+/* Skapar en underline under texten */
+.exploring-title:after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 20px;
+  border-bottom: 4px solid #003069;
+  /* border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 60%; */
+  margin-bottom: 6vh;
+}
+
+.exploring-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.exploring-image__title {
+  display: flex;
+  justify-content: left;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 5vw;
+}
+
+.exploring-description {
+  text-align: left;
+  margin-left: 5vw;
+}
+
+.exploring-image__container {
+  background: url('/images/player.jpg');
+  width: 100%;
+  height: 29vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.exploring-image {
+  width: 100%;
+  height: auto;
+  background-size: contain;
+}
+
+.exploring-button__center {
+  display: flex;
+  justify-content: center;
+}
+
+.exploring-button {
+  padding: 1vh 4vw;
+  display: flex;
+  margin-top: 1.5vh;
+  border-radius: 5px;
+  background: #f77f00;
+  border: none;
+  font-weight: bold;
+}
+
+.right-side__container {
+  margin-top: 2.5vh;
+}
+
+.exploring-title__right {
+  display: flex;
+  justify-content: right;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 5vw;
+  margin-top: 2vh;
+}
+
+.exploring-description__right {
+  text-align: right;
+  margin-right: 5vw;
+}
+
+.exploring-image__container__right {
+  background: url('/images/teams.webp');
+  width: 100%;
+  height: 29vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.exploring-button__right {
+  padding: 1vh 4vw;
+  display: flex;
+  margin-top: 1.5vh;
+  border-radius: 5px;
+  background: #55a630;
+  border: none;
+  font-weight: bold;
+}
+
+.exploring-title__last {
+  display: flex;
+  justify-content: left;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 5vw;
+  margin-top: 3vh;
+}
+
+.exploring-image__container__last {
+  background: url('/images/ref2.jpg');
+  width: 100%;
+  height: 29vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.exploring-button__last {
+  padding: 1vh 4vw;
+  display: flex;
+  margin-top: 1.5vh;
+  border-radius: 5px;
+  background: #ef233c;
+  border: none;
+  font-weight: bold;
+  margin-bottom: 10vh;
+}
 
 /* Desktop */
 
@@ -153,5 +299,42 @@ a {
     /* font-size: 25px; */
     font-size: 1.5rem;
     margin: 40px 30px;
+  }
+}
+
+/* Desktop Banner Section */
+
+@media screen and (min-width: 1024px) {
+  .banner__section {
+    margin: 22vh 0;
+    height: 50vh;
+    min-height: 50vh;
+  }
+
+  .banner__image {
+    height: 70vh;
+  }
+
+  .banner-title {
+    font-size: 3.2rem;
+    margin: 0 18vw;
+  }
+
+  .banner-subtitle {
+    font-size: 1.7rem;
+    margin-top: 4vh;
+  }
+
+  .banner-button {
+    padding: 1.2vh 2.5vw;
+    margin-top: 2.5vh;
+  }
+
+  .banner-arrow {
+    margin-left: 0.5vw;
+  }
+
+  .banner-button:hover {
+    background: #142e82;
   }
 }
