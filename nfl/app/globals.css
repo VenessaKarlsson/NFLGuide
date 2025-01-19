@@ -188,6 +188,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .exploring-image {
   width: 100%;
   height: auto;
@@ -274,6 +275,7 @@ a {
   font-weight: bold;
   margin-bottom: 10vh;
 }
+/* End of Exploring page */
 
 /* Desktop */
 
@@ -336,5 +338,112 @@ a {
 
   .banner-button:hover {
     background: #142e82;
+  }
+
+  /* Exploring page */
+  @media screen and (min-width: 1024px) {
+    .exploring__section {
+      display: flex;
+      flex-direction: column;
+      height: auto; /* Adjusted height for desktop */
+    }
+
+    .exploring-wrapper {
+      display: flex;
+      flex-direction: row; /* Change to row layout */
+      align-items: center;
+      justify-content: space-between; /* Adjust spacing */
+      padding: 0 5vw; /* Add padding for spacing */
+    }
+
+    .exploring-image__title,
+    .exploring-description,
+    .exploring-button__center {
+      margin: 0; /* Reset margins */
+    }
+
+    .exploring-image__container {
+      flex: 1; /* Make the image container flexible */
+      height: 50vh; /* Adjust height */
+      background-position: center; /* Center background image */
+      background-size: cover; /* Cover background */
+    }
+
+    .exploring-image__title {
+      font-size: 2.5rem; /* Adjust font size */
+      margin-bottom: 1rem; /* Add space below the title */
+    }
+
+    .exploring-description {
+      font-size: 1.25rem; /* Adjust font size */
+      margin-bottom: 1rem; /* Add space below the description */
+    }
+
+    .exploring-button__center {
+      margin-top: 1rem; /* Add space above the button */
+    }
+
+    .right-side__container {
+      display: flex;
+      flex-direction: row; /* Change to row layout */
+      align-items: center;
+      justify-content: space-between; /* Adjust spacing */
+      padding: 0 5vw; /* Add padding for spacing */
+      margin-top: 5vh; /* Add space between sections */
+    }
+
+    .exploring-title__right,
+    .exploring-description__right,
+    .exploring-button__right {
+      margin: 0; /* Reset margins */
+    }
+
+    .exploring-image__container__right {
+      flex: 1; /* Make the image container flexible */
+      height: 50vh; /* Adjust height */
+      background-position: center; /* Center background image */
+      background-size: cover; /* Cover background */
+    }
+
+    .exploring-title__right {
+      font-size: 2.5rem; /* Adjust font size */
+      margin-bottom: 1rem; /* Add space below the title */
+    }
+
+    .exploring-description__right {
+      font-size: 1.25rem; /* Adjust font size */
+      margin-bottom: 1rem; /* Add space below the description */
+    }
+
+    .exploring-button__right {
+      margin-top: 1rem; /* Add space above the button */
+    }
+
+    .exploring-title__last,
+    .exploring-description__last,
+    .exploring-button__last {
+      margin: 0; /* Reset margins */
+    }
+
+    .exploring-image__container__last {
+      flex: 1; /* Make the image container flexible */
+      height: 50vh; /* Adjust height */
+      background-position: center; /* Center background image */
+      background-size: cover; /* Cover background */
+    }
+
+    .exploring-title__last {
+      font-size: 2.5rem; /* Adjust font size */
+      margin-bottom: 1rem; /* Add space below the title */
+    }
+
+    .exploring-description__last {
+      font-size: 1.25rem; /* Adjust font size */
+      margin-bottom: 1rem; /* Add space below the description */
+    }
+
+    .exploring-button__last {
+      margin-top: 1rem; /* Add space above the button */
+    }
   }
 }
